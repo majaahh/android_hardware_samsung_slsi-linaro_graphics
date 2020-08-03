@@ -42,7 +42,7 @@
  */
 #define EXYNOS_ION_HEAP_VENDOR_SYSTEM_MASK  (1 << 14)
 
-#define ION_MAX_HEAP_COUNT 15
+#define ION_MAX_HEAP_COUNT 16
 
 /*
  * ION heap names
@@ -65,6 +65,7 @@ static const struct {
     {"gpu_buffer",         "system-secure-gpu_buffer", 10},
     {"camera_heap",        "camera",                   11},
     {"secure_camera_heap", "secure_camera",            18},
+    {"sensor_direct_heap", "sensor_direct",            18},
     {"[reserved]",         "reserved",                 0 }, /* reserved heap id. never use */
     {"ext_ui",             "ext_ui",                   6 },
     {"vendor_system_heap", "system",                   22 },
